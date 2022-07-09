@@ -13,44 +13,55 @@ body{
     height: auto;
     display: flex;
     flex-flow: column wrap;
-    margin: 50px 100px;
+    margin: 30px 80px;
     border-radius: 20px;
-    padding: 50px 100px;
-    gap: 10px;
+    padding: 30px 80px;
+    gap: 8px;
     box-shadow: 0 5px 0 2px #999999;
 }
 
 .row{
   width: 100%;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 .key{
     background-color: #444444;
     color: white;
-    font-weight: bold;
-    width:100px ;
-    height: 80px;
+    /* font-weight: bold; */
+    width:70px ;
+    height: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-size: x-large;
-    border-radius: 10px;
-    margin: 0 4px;
+    font-size: 22px;
+    border-radius: 5px;
+    margin: 0 3px;
+    padding: 10px;
 }
 .key:hover{
     font-size: 30px;
     font-weight: bolder;
     box-shadow: 2px 2px 10px 1px black;
 }
-#row1 .key{
-    width: 90px;
-    margin: 0;
+#row1 #key14:hover,
+#row1 #key15:hover,
+#row1 #key16:hover
+{
+width:100px;
+}
+#row6 #key2:hover{
+width: 150px;
+}
+
+#row3 .key{
+    width: 100px;
 }
 #row3 #key1{
     flex-basis: 150px;
+    margin: 0;
 }
 #row2 #key14,
 #row4 #key1, #row4 #key13,
@@ -60,5 +71,8 @@ body{
 }
 #row6 #key5{
     flex-grow: 3;
+}
+#row6 #key2{
+    flex-basis:100px ;
 }
 
